@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/b873803313.js" crossorigin="anonymous"></script>
+        <title>บทเรียน | เอชทีเอ็มแอลไลบรารี่</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;}
+
+            .navbar-textlogo:hover{
+                color : #1BB2B6;
+                transition: all 0.2s;}
+        
+            ::-webkit-scrollbar{
+                width: 10px;}
+  
+            ::-webkit-scrollbar-track{
+                background: #222;}
+   
+            ::-webkit-scrollbar-thumb{
+                background: #1BB2B6;}
+  
+            ::-webkit-scrollbar-thumb:hover{
+                background: #1BB2B6ab;}
+
+            #card-1:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-2:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-3:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-4:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-5:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-6:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-7:hover{
+                bottom: 10px;
+                transform: all 1s;}
+
+            #card-8:hover{
+                bottom: 10px;
+                transform: all 1s;}
+        </style>
+    </head>
+    <body>
+        <navbar class="navbar navbar-expand-lg navbar-dark fixed-top" style="
+        background-color:#222222;
+        user-select: none; 
+        z-index: 99;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span style="
+                    color : #00b4d8; 
+                    font-size: 25px; 
+                    margin: 0; 
+                    padding: 0;">
+                        <i class="fa-sharp fa-solid fa-file-code"></i> 
+                    </span> 
+                    <span class="navbar-textlogo" style="
+                    font-size: 22px;
+                    font-family: kanit;
+                    font-weight: bold;
+                    transition: all 0.2s"> 
+                         เอชทีเอ็มแอล - ไลบรารี่
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" style="
+                font-size: 16px;
+                font-family: sarabun;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html#lesson" role="button" data-bs-toggle="dropdown" style="
+                            color : #1BB2B6;">
+                                <i class="fa-solid fa-book"></i> 
+                                 บทเรียน
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" style="
+                            background-color: #222222;
+                            border: none;">
+                                <li><a class="dropdown-item" href="LessionOne.html"><b>บทเรียนที่ 1</b> เอชทีเอ็มแอลเบื้องต้น</a></li>
+                                <li><a class="dropdown-item" href="LessionTwo.html"><b>บทเรียนที่ 2</b> เอกสารและการตกแต่ง</a></li>
+                                <li><a class="dropdown-item" href="LessionThree.html"><b>บทเรียนที่ 3</b> การสร้างรายการ</a></li>
+                                <li><a class="dropdown-item" href="LessionFour.html"><b>บทเรียนที่ 4</b> การใส่รูปภาพในเว็บเพจ</a></li>
+                                <li><a class="dropdown-item" href="LessionFive.html"><b>บทเรียนที่ 5</b> การสร้างตาราง</a></li>
+                                <li><a class="dropdown-item" href="LessionSix.html"><b>บทเรียนที่ 6</b> การสร้างการเชื่อมโยง</a></li>
+                                <li><a class="dropdown-item" href="LessionSeven.html"><b>บทเรียนที่ 7</b> การสร้างฟอร์ม</a></li>
+                                <li><a class="dropdown-item" href="LessionEight.html"><b>บทเรียนที่ 8</b> การใช้ซีเอสเอส</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Exercise.html"><i class="fa-solid fa-book-open"></i> แบบทดสอบ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CodeEditor.html"><i class="fa-solid fa-code"></i> ทดสอบเขียนโค้ด</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+            <source src="Video/Lession-header-videobg.mp4">
+        </video>
+        <div class="container-fluid p-3" style="
+        background-color:#222222;">
+        </div>
+        <main class="container-fluid bg-dark p-1">
+            <div class="container p-5">
+                <h1 class="text-white pt-5" style="
+                font-family: sarabun;
+                user-select: none;">
+                    <b style="
+                    color:#00b4d8;">บทเรียนที่ 1</b> เอชทีเอ็มแอลเบื้องต้น
+                </h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="
+                    font-family: sarabun;
+                    user-select: none;">
+                        <li class="breadcrumb-item"><a class="link-info" href="index.html" style="
+                        text-decoration: none;">หน้าแรก</a></li>
+                        <li class="breadcrumb-item active" aria-current="page" style="
+                        text-decoration: none;"><strong>บทเรียนที่ 1</strong> เอชทีเอ็มแอลเบื้องต้น</li>
+                        <li class="breadcrumb-item"><a class="link-info" href="LessionOne-one.html" style="
+                        text-decoration: none;">การสร้างและบันทึกเอกสาร</a></li>
+                        <li class="breadcrumb-item"><a class="link-info" href="LessionOne-two.html" style="
+                        text-decoration: none;">การแสดงไฟล์เอกสารและการเปิดดู CODE ภาษา HTML</a></li>
+                    </ol>
+                  </nav>
+                  <div class="container-fluid text-white pt-3">
+                    <div class="container p-2"  style="
+                    font-family: sarabun;">
+                        <h4 class="text-white">
+                            <b>จุดประสงค์การเรียนรู้</b>
+                        </h4>
+                        <font class="text-white">
+                            1. สามารถอธิบายโครงสร้างและคำสั่งหลักของภาษา HTML ได้<br>
+                            2. อธิบายและใช้คำสั่งเบื้องต้นในการเขียนโปรแกรมภาษา HTML ได้<br>
+                            3. สามารถสร้างเว็บเพจด้วยภาษา HTML<br>
+                            4. สามารถแสดงผลลัพธ์บนเว็บบราวเซอร์ได้อย่างถูกต้อง<br>
+                            5. สามารถใช้โปรแกรม Notepad ในการพิมพ์ไฟล์เอกสาร HTML ได้<br>
+                        </font>
+                    </div>
+            </div>
+        </main>
+        <div class="container-fluid p-3" style="
+        background-color:#222222;">
+        </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <h4 class="text-dark">
+                    <b>ภาษา HTML</b>
+                </h4>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML หรือ HyperText Markup Language เป็นภาษาคอมพิวเตอร์รูปแบบหนึ่ง ที่มีลักษณะเป็นภาษาในเชิงการบรรยายเอกสารไฮเปอร์มีเดีย
+                    (Hypermedia Document Description Language) เพื่อนำเสนอเอกสารนั้น เผยแพร่ในระบบเครือข่ายใยแมงมุม WWW (World Wide Web) มีโครงสร้างการเขียน ที่อาศัยตัวกำกับ เรียกว่า แท็ก (Tag) ควบคุมการแสดงผลของข้อความ, รูปภาพ หรือวัตถุอื่นๆ ผ่านโปรแกรมบราวเซอร์ (Browser)
+                </font>
+                <hr>
+            </div>
+            <div class="container p-2" style="
+            font-family: sarabun;">
+                <hr>
+                <h4 class="text-dark">
+                    <b>แท็ก</b>
+                </h4>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แท็ก เป็นลักษณะเฉพาะของภาษา HTML ใช้ในการระบุรูปแบบคำสั่ง หรือการลงรหัสคำสั่ง HTML ภายในเครื่องหมายน้อยกว่า (<code>&lt;</code>) และมากกว่า(<code>&gt;</code>) โดยที่แท็ก HTML แบ่งได้ 2 ลักษณะคือ<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- แท็กเดี่ยว เป็นแท็กที่ไม่ต้องมีการปิดรหัส เช่น <code>&lt;P&gt;, &lt;HR&gt;</code> เป็นต้น<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- แท็กเปิด/ปิด เป็นแท็กที่ประกอบด้วย แท็กเปิด และ แท็กปิด โดยแท็กปิด จะมีเครื่องหมายสแลช (<code>/</code>) นำหน้าคำสั่งในแท็กนั้นๆ เช่น <code>&lt;B&gt;…&lt;/B&gt;, &lt;P&gt;…&lt;/P&gt;</code> เป็นต้น
+                </font>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <h4 class="text-dark">
+                    <b>คุณลักษณะ</b>
+                </h4>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นส่วนขยายความสามารถของแท็กจะต้องใส่ภายในเครื่องหมาย <code>&lt; &gt;</code> ในส่วนแท็กเปิดเท่านั้นแท็กคำสั่ง HTML แต่ละคำสั่ง จะมีคุณลักษณะ แตกต่างกันไป และมีจำนวนไม่เท่ากัน การระบุคุณลักษณะ มากกว่า 1 คุณลักษณะ ให้ใช้ช่องว่างเป็นตัวคั่น เช่น แท็ก ควบคุมเกี่ยวกับรูปภาพ <code>&lt;IMG&gt;</code> มี Attributes ดังนี้<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;IMG SRC="ชื่อไฟล์.นามสกุล" WIDTH="n" HEIGHT="n" ALT="text" BORDER="n"&gt;</code><br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <code>SRC</code> เป็นคุณลักษณะควบคุมชื่อไฟล์ภาพที่จะนำมาแสดงผล<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <code>WIDTH</code> เป็นคุณลักษณะควบคุมความกว้างของภาพ<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <code>HEIGHT</code> เป็นคุณลักษณะควบคุมความสูงของภาพ<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <code>ALT</code> เป็นคุณลักษณะควบคุมคำอธิบายภาพ<br>
+                </font>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <code>BORDER</code> เป็นคุณลักษณะควบคุมขนาดของเส้นขอบของภาพ<br>
+                </font>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <p class="text-dark"> 
+                    ไฟล์เอกสาร HTML เป็นไฟล์ข้อความรูปแบบหนึ่ง (Text File) ที่เก็บชุดคำสั่ง HTML ดังนั้นการสร้างเอกสาร HTML จึงสามารถใช้ Text Editor ตัวใดก็ได้ เช่น NotePad Editplus หรือ Dreamweaver
+                </p>
+                <font>
+                    <h4 class="text-dark">
+                        <b>เริ่มด้วยการเปิดโปรแกรม Notepad</b>
+                    </h4>
+                </font>
+                <div class="container" style="
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: #222222;
+                background-color: #222222;">
+                    <div class="container" style="
+                    background-color: #ffffff;">
+                        <font>
+                            <p  style="
+                            color:#000000;
+                            padding: 10px;
+                            margin: 10px;"
+                            >
+                                <code>
+                                    &lt;html&gt;<br>
+                                    &lt;/html&gt;
+                                </code>
+                            </p>
+                        </font>
+                    </div>
+                    <a class="btn btn-info me-ms-2" href="LessionOne-code-1.html" target="_blank" id="btn" type="button">
+                        <b style="
+                        font-family: sarabun;">
+                            แสดงผลลัพธ์                    
+                        </b>
+                    </a>
+                </div>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แต่ละข้อความที่พิมพ์มานี้เราเรียกมันว่าแท็กซึ่งแท็กแรกเป็นแท็กที่ใช้บอกว่าเป็นการเริ่มต้นเอกสาร และต่อมาก็คือแท็กที่ใช้บอกจุดสิ้นสุด การกำหนดว่าแท็กใดเป็นแท็กสิ้นสุด สามารถทำได้โดยการใส่เครื่องหมาย "<code>/</code>" ไว้ที่หน้าแท็กเป็นส่วนใหญ่ , แต่ก็ไม่ได้หมายความว่าทุกแท็ก จำเป็นจะต้องมีแท็กปิดเสมอไป
+                    เมื่อเรานึกถึง "แท็ก" ก็เหมือนกับว่า เราได้พูดคุยกับ โปรแกรมเบราส์เซอร์ หรือไม่ก็เป็นการบอกรายละเอียดให้กับมัน แล้วอะไรละที่จะบอกสิ่งแรกก็คือ "นี่คือการเริ่มต้นเอกสาร <code>&lt;HTML&gt;</code> และสิ่งต่อมาก็คือ "นี่คือการสิ้นสุดเอกสาร" <code>&lt;/HTML&gt;</code> เมื่อมาถึงตรง นี้แล้ว สิ่งที่จะต้องทำต่อไปก็คือเริ่มใส่แท็กอื่น ๆ เข้าไปอีก
+                    ในเอกสาร HTML โดยทั่วไปมักจะต้องมีแท็ก HEAD เพื่อกำหนดรายละเอียดในส่วนหัวของเอกสาร
+                </font>
+                
+                <div class="container" style="
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: #222222;
+                background-color: #222222;">
+                    <div class="container" style="
+                    background-color: #ffffff;">
+                        <font>
+                            <p  style="
+                            color:#000000;
+                            padding: 10px;
+                            margin: 10px;"
+                            >
+                                <code>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                    &lt;/html&gt;
+                                </code>
+                            </p>
+                        </font>
+                    </div>
+                    <a class="btn btn-info me-ms-2" href="LessionOne-code-2.html" target="_blank" id="btn" type="button">
+                        <b style="
+                        font-family: sarabun;">
+                            แสดงผลลัพธ์                    
+                        </b>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และรายละเอียดแรกที่เราจะใส่ไว้ในส่วนหัวของเอกสาร (อยู่ระหว่างแท็ก HEAD) ก็คือ แท็กไตเติ้ล TITLE ซึ่งก็คือชื่อเรื่องนั่นเอง
+                </font>
+                <div class="container" style="
+                margin-top: 10px;
+                margin-bottom: 10px;                
+                border-style: solid;
+                border-width: 10px;
+                border-color: #222222;
+                background-color: #222222;">
+                    <div class="container" style="
+                    background-color: #ffffff;">
+                        <font>
+                            <p  style="
+                            color:#000000;
+                            padding: 10px;
+                            margin: 10px;"
+                            >
+                                <code>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;title&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                    &lt;/html&gt;
+                                </code>
+                            </p>
+                        </font>
+                    </div>
+                    <a class="btn btn-info me-ms-2" href="LessionOne-code-3.html" target="_blank" id="btn" type="button">
+                        <b style="
+                        font-family: sarabun;">
+                            แสดงผลลัพธ์                    
+                        </b>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และต่อมาก็คือแท็ก BODY ซึ่งเป็นแท็กที่สำคัญอย่างยิ่ง เพราะต่อไปรายละเอียดต่างๆ ใน เอกสารของเราจะถูกใส่ไว้ภายในแท็กนี้
+                </font>
+                <div class="container" style="
+                margin-top: 10px;
+                margin-bottom: 10px;                
+                border-style: solid;
+                border-width: 10px;
+                border-color: #222222;
+                background-color: #222222;">
+                    <div class="container" style="
+                    background-color: #ffffff;">
+                        <font>
+                            <p  style="
+                            color:#000000;
+                            padding: 10px;
+                            margin: 10px;"
+                            >
+                                <code>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;title&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </code>
+                            </p>
+                        </font>
+                    </div>
+                    <a class="btn btn-info me-ms-2" href="LessionOne-code-4.html" target="_blank" id="btn" type="button">
+                        <b style="
+                        font-family: sarabun;">
+                            แสดงผลลัพธ์                    
+                        </b>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อีกสิ่งหนึ่งที่เราจะทำกันก็คือ, ใส่ชื่อหรือไตเติ้ลให้กับเอกสาร
+                </font>
+                <div class="container" style="
+                margin-top: 10px;
+                margin-bottom: 10px;                
+                border-style: solid;
+                border-width: 10px;
+                border-color: #222222;
+                background-color: #222222;">
+                    <div class="container" style="
+                    background-color: #ffffff;">
+                        <font>
+                            <p  style="
+                            color:#000000;
+                            padding: 10px;
+                            margin: 10px;"
+                            >
+                                <code>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</code>ยินดีต้อนรับสู่การเขียนเว็บเพจด้วยภาษา HTML<code>&lt;title&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </code>
+                            </p>
+                        </font>
+                    </div>
+                    <a class="btn btn-info me-ms-2" href="LessionOne-code-5.html" target="_blank" id="btn" type="button">
+                        <b style="
+                        font-family: sarabun;">
+                            แสดงผลลัพธ์                    
+                        </b>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="container p-2"  style="
+            font-family: sarabun;">
+                <hr>
+                <font class="text-dark">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บันทึก ข้อมูลที่พิมพ์มาทั้งหมดโดยเลือก <code>File / Save as</code> แล้วตั้งชื่อเป็น example1.html<br>
+                </font>
+                <font class="text-dark"></font>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ก่อนที่จะข้ามไปเรียนรู้ในบทต่อไป มีสิ่งจำเป็น 2 ประการที่จะต้องเตรียมก็คือ ประการที่ 1 จะต้องเตรียมข้อมูล พอคร่าว ๆ ว่าเว็บเพจของเราควรจะมีหน้าตาเป็นอย่างไร และประการที่ 2 คือต้องจำองค์ประกอบพื้นฐานของ เอกสาร HTML ในบทนี้ให้ดี
+                </font>
+                <hr>
+            </div>
+            <div class="container d-flex justify-content-center p-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination" style="
+                    font-family: sarabun;">
+                      <li class="page-item disabled"><a class="page-link">หน้าแรก</a></li>
+                      <li class="page-item disabled"><a class="page-link">1</a></li>
+                      <li class="page-item"><a class="page-link text-info" href="LessionOne-one.html">2</a></li>
+                      <li class="page-item"><a class="page-link text-info" href="LessionOne-two.html">3</a></li>
+                      <li class="page-item"><a class="page-link text-info" href="LessionOne-two.html">หน้าสุดท้าย</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+        <div class="container-fluid p-3" style="
+        background-color:#222222;">
+        </div>
+        <main class="container-fluid bg-dark p-5">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-center">
+                    <div class="row pt-2 d-flex justify-content-center">
+                        <div class="col pt-3 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center disabled" id="card-1" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-1.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 1
+                                        </span>
+                                         เอชทีเอ็มแอลเบื้องต้น
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        HTML หรือ HyperText Markup Language เป็นภาษาคอมพิวเตอร์รูปแบบหนึ่ง ที่มีลักษณะเป็นภาษาในเชิงการบรรยาย...
+                                    </p>
+                                    <a href="LessionOne.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-3 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-2" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-2.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 2
+                                        </span>
+                                         เอกสารและการตกแต่ง
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        คำสั่งที่ใช้ในการเว้นว่างในเอกสารหรือเคาะเว้นวรรค ไม่ว่าเราจะพิมพ์ข้อมูลในเอกสาร HTML โดยการเว้นช่องไว้มากขนาด...
+                                    </p>
+                                    <a href="LessionTwo.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-3 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-3" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-3.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 3
+                                        </span>
+                                         การสร้างรายการ
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        รายการเป็นการนำเสนอข้อมูลในเอกสารแบบจัดเรียงรายการ โดยวิธีนี้จะทำให้ข้อมูลในเอกสารเป็นหัวข้อ เป็นหมวดหมู่...
+                                    </p>
+                                    <a href="LessionThree.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-3 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-4" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-4.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 4
+                                        </span>
+                                         การใส่รูปภาพในเว็บเพจ
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        ในยุคเริ่มต้นของอินเทอร์เน็ต นั้นการนำเสนอข้อมูลในเว็บไซต์ของแต่ละเว็บไซต์ ล้วนแต่เป็นข้อความทั้งนั้นแต่ในช่วงระยะเวลา...
+                                    </p>
+                                    <a href="LessionFour.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-5" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-5.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 5
+                                        </span>
+                                        การสร้างตาราง
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        ตาราง เป็นอีกวิธีหนึ่งในการนำเสนอข้อมูลบน Web ที่เหมาะกับข้อมูลที่เป็นรายงานสถิติ หรือข้อมูลที่เป็นตัวเลขจำนวน...
+                                    </p>
+                                    <a href="LessionFive.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-6" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-6.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 6
+                                        </span>
+                                         การสร้างการเชื่อมโยง
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        ในการสร้างลิงค์ต้องคำนึงถึงจุดลิงค์และปลายทางของลิงค์จะเกิดจากเราสร้างขึ้นเองส่วนปลายทางของลิงค์ะมีทั้งที่เราสร้างขึ้น...
+                                    </p>
+                                    <a href="LessionSix.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-7" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-7.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 7
+                                        </span>
+                                         การสร้างฟอร์ม
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        ฟอร์มหรือแบบฟอร์มเป็นรูปแบบการรับข้อมูลบนหน้าเว็บเพจที่เราคุ้นเคยกันดีไม่ว่าจะเป็น การค้นหาข้อมูลจากอินเทอร์เน็ต...
+                                    </p>
+                                    <a href="LessionSeven.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pt-5 d-flex justify-content-center">
+                            <div class="card d-flex justify-content-center" id="card-8" style="width: 18rem;">
+                                <img class="card-img-top" src="Picture/Home-lession-8.png" alt="Card image cap">
+                                <div class="card-body bg-white text-dark">
+                                    <h5 class="card-title text-center" style="
+                                    font-family: sarabun;">
+                                        <span style="
+                                        font-family: kanit;
+                                        font-weight: bold;
+                                        color: #00b4d8;">
+                                            บทที่ 8
+                                        </span>
+                                         การใช้ซีเอสเอส
+                                    </h5>
+                                    <p class="card-text text-center" style="
+                                    font-family: sarabun;">
+                                        ซีเอสเอส จะมีรูปแบบทั้งหมด 3 รูปแบบ การใช้งานจะไม่แตกต่างกันมากมีข้อดีข้อเสียแตกต่างกันเพียงเล็กน้อยและเหมาะ...
+                                    </p>
+                                    <a href="LessionEight.html" class="btn btn-outline-info">เริ่มเรียน</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container-fluid p-3" style="
+        background-color:#222222;">
+        </div>
+        <div class="container-fluid bg-white p-4"></div>
+        <footer class="text-center text-lg-start text-muted " style="
+        background-color:#222222;">
+            <div class="container-fluid p-2">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fa-sharp fa-solid fa-file-code"></i> เอชทีเอ็มแอลไลบรารี่
+                            </h6>
+                            <p class="text-center">
+                                เว็บไซต์เอชทีเอ็มแอลไลบรารี่ คือเว็บไซต์เพื่อการสอนภาษา HTML เป็นสื่อการสอนที่นำเสนอความรู้ และเนื้อหา
+                                โดยประกอบการเรียนในรายวิชา การเขียนเว็บไซต์ด้วยภาษา HTML โดยมีวัตถุประสงค์ให้นักเรียนและผู้สนใจทั่วไป...                                                             
+                            </p>
+                        </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">ลิงค์ทางลัด</h6>
+                        <p>
+                            <a href="index.html" class="text-reset">หน้าแรก</a>
+                        </p>
+                        <p>
+                            <a href="Exercise-1.html" class="text-reset">แบบทดสอบ</a>
+                        </p>
+                        <p>
+                            <a href="CodeEditor.html" class="text-reset">ทดสอบเขียนโค้ด</a>
+                        </p>
+                        <p>
+                            <a href="Contact.html" class="text-reset">ติดต่อเรา</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">ติดต่อเรา</h6>
+                        <p><i class="fas fa-envelope me-3"></i>htmllibraryth@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i>09x-xxx-xxxx</p>
+                        <p><i class="fa-brands fa-facebook me-3"></i>Thxxx xxxxx</p>
+                        <p><i class="fa-brands fa-line me-3"></i>xxxxx</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center"><a href="#" class="text-reset">กลับขึ้นด้านบน</a></div>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2566 ลิขสิทธิ์:
+                <a class="text-reset fw-bold" href="index.html">HtmlLibrary.com</a>
+            </div>
+        </footer>
+    </body>
+</html>
